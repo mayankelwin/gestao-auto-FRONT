@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2c6631;
+  --color-primary-dark: #1f4a24;
+  --color-primary-100: #d3e3d2;
+  --color-primary-50: #ebf1e9;
+  --color-yellow: #f2c230;
+  --color-yellow-50: #f8f0da;
+  --color-blue: #1e88e5;
+  --color-blue-50: #e8f0f8;
+  --color-navy: #0b1d33;
+  --color-navy-800: #122a47;
+  --color-navy-700: #1b3a5e;
+
+  --color-app: #f4f5f2;
+  --color-surface: #ffffff;
+  --color-ink: #0b1d33;
+  --color-ink-soft: #566068;
+  --color-ink-mute: #6a6f75;
+  --color-ink-invert: #ffffff;
+  --color-ink-navy: #b9c6d6;
+  --color-line: #e3e6ea;
+  --color-line-strong: #c9ced6;
+  --color-line-field: #8b8e94;
+
+  --color-success: #2f5e36;
+  --color-success-bg: #e6efe4;
+  --color-warning: #8a6116;
+  --color-warning-bg: #f6edd6;
+  --color-danger: #a63d33;
+  --color-danger-bg: #f6e9e6;
+  --color-info: #2f6da8;
+  --color-info-bg: #e7eff6;
+  --color-neutral: #5d6675;
+  --color-neutral-bg: #eceef0;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --text-overline: 0.6875rem;
+  --text-overline--line-height: 1rem;
+  --text-overline--font-weight: 600;
+  --text-overline--letter-spacing: 0.06em;
+
+  --text-caption: 0.6875rem;
+  --text-caption--line-height: 1rem;
+
+  --text-micro: 0.71875rem;
+  --text-micro--line-height: 1.0625rem;
+
+  --text-small: 0.75rem;
+  --text-small--line-height: 1.125rem;
+
+  --text-chip: 0.78125rem;
+  --text-chip--line-height: 1.125rem;
+
+  --text-body: 0.875rem;
+  --text-body--line-height: 1.375rem;
+
+  --text-h3: 1rem;
+  --text-h3--line-height: 1.5rem;
+  --text-h3--font-weight: 600;
+
+  --text-title: 1.125rem;
+  --text-title--line-height: 1.625rem;
+  --text-title--font-weight: 600;
+
+  --text-h2: 1.25rem;
+  --text-h2--line-height: 1.75rem;
+  --text-h2--font-weight: 600;
+
+  --text-h1: 1.5rem;
+  --text-h1--line-height: 2rem;
+  --text-h1--font-weight: 600;
+
+  --text-value: 1.625rem;
+  --text-value--line-height: 2.125rem;
+  --text-value--font-weight: 600;
+
+  --radius-sm: 4px;
+  --radius-badge: 6px;
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-panel: 16px;
+
+  --shadow-control: 0 1px 1px rgba(15, 31, 18, 0.18);
+
+  --spacing-sidebar: 248px;
+  --spacing-topbar: 64px;
+  --spacing-control: 40px;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-app);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 142, 148, 0.35) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 142, 148, 0.3); 
+  border-radius: 9999px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 142, 148, 0.55);
+}
